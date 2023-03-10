@@ -11,3 +11,5 @@ Here is a short demo video showing some of the capabilites / functionality of De
 Experiment Jupyter Notebooks are available in the experiments/ folder, or at the following nbviewer links:
 
 [Delay Line Variation Experiment](https://nbviewer.org/github/delaycattemp/delaycattemp/blob/main/experiments/Delay%20Line%20Variation%20Experiment.ipynb)
+
+[De-Essing Experiment](https://nbviewer.org/github/delaycattemp/delaycattemp/blob/main/experiments/De-Essing%20Experiment.ipynb)
