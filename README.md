@@ -6,3 +6,7 @@ Delay Cat is a Feature Based Delay Line implementation using music information r
 
 # Video
 Here is a short demo video showing some of the capabilites / functionality of Delay Cat, hosted at: https://youtu.be/nBOfKavElt8
+
+# Experiments
+Experiment Jupyter Notebooks are available in the experiments/ folder, or at the following nbviewer links:
+![Delay Line Variation Experiment](https://nbviewer.org/github/delaycattemp/delaycattemp/blob/main/experiments/Delay%20Line%20Variation%20Experiment.ipynb)
