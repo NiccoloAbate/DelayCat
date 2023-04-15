@@ -15,7 +15,7 @@ Experiment Jupyter Notebooks are available in the experiments/ folder, or at the
 [De-Essing Experiment](https://nbviewer.org/github/delaycattemp/delaycattemp/blob/main/experiments/De-Essing%20Experiment.ipynb)
 
 # Builds
-Builds of the plugin are available in the builds/ directory (with the exception of the packaged installers) or available at the following direct download links.
+Builds of the plugin are available in the builds/ directory (with the exception of the packaged installers) or available at the following direct download links. Note that the code is not signed.
 
 Windows:
 [VST2/.dll](https://drive.google.com/uc?export=download&id=1YTLBRWWhTi1gDFs13-AsPPnAirbg-tBU),
