@@ -13,3 +13,12 @@ Experiment Jupyter Notebooks are available in the experiments/ folder, or at the
 [Delay Line Variation Experiment](https://nbviewer.org/github/delaycattemp/delaycattemp/blob/main/experiments/Delay%20Line%20Variation%20Experiment.ipynb)
 
 [De-Essing Experiment](https://nbviewer.org/github/delaycattemp/delaycattemp/blob/main/experiments/De-Essing%20Experiment.ipynb)
+
+# Builds
+Windows:
+[VST2 / .dll](https://drive.google.com/uc?export=download&id=1YTLBRWWhTi1gDFs13-AsPPnAirbg-tBU)
+[VST3 / .vst3](https://drive.google.com/uc?export=download&id=1S9zAbUr6qFOz16qmCa68-pfOn5zDYh4S)
+[Installer / .exe](https://drive.google.com/uc?export=download&id=1BnhDhW6luC1BSJby2V8zBQUv4OOzNbCN)
+[Installer / .zip](https://drive.google.com/uc?export=download&id=1hT4J2VThzDUTUa3kBnCqSXMaeUeZtr75)
+
+MacOS: 
