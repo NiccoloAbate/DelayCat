@@ -1,4 +1,7 @@
 # Performance Evaluation (ongoing)
+
+# Primary Performance Affectors
+
 Knowing the Feature-Based Delay Line (FBDL) architecture, intuitively we think there are a 3 main affectors of performance: (1) FFT / analysis, (2) Targeting function, and (3) audio processing overhead. This intuition is backed by measurements as well.
 
 ## FFT / Analysis
@@ -35,3 +38,12 @@ The graph below shows the CPU Load with different Delay Line Buffer Sizes (secon
 ![CPU Load (Segment Size = 11025) and CPU Load (Segment Size = 1024)](https://github.com/delaycattemp/delaycattemp/assets/105883026/1635e056-4c81-4d88-b156-a650800dcd8a)
 
 Interestingly, the buffer size has no visible impact when the default segment size of 0.25s / 11025 samples is used. However, with the smaller segment size of 1024 samples, there is visible affect. This is because factors that affect the number of queries to the targeting function and comparisons in the targeting function are multiplicative, meaning the affect of the larger number of comparisons introduced by the increased buffer size is much more noticeable with more frequent queries to the targeting function.
+
+# Other Metrics and Considerations
+
+## Delay Time
+Like a traditional delay line, Delay Time has no effect on performance.
+
+This is illustrated in the graph below.
+
+![CPU Load vs  DelayTime](https://github.com/delaycattemp/delaycattemp/assets/105883026/3719ddaa-e76c-427f-a73a-d2c4fa6d4e74)
