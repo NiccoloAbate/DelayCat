@@ -2,7 +2,7 @@
 
 # Primary Performance Affectors
 
-Knowing the Feature-Based Delay Line (FBDL) architecture, intuitively we think there are a 3 main affectors of performance: (1) FFT / analysis, (2) Targeting function, and (3) audio processing overhead. This intuition is backed by measurements as well.
+Knowing the Feature-Based Delay Line (FBDL) architecture, intuitively we think there are a 3 main affectors of performance: (1) [FFT / analysis](#fft / analysis), (2) Targeting function, and (3) audio processing overhead. This intuition is backed by measurements as well.
 
 ## FFT / Analysis
 This is shown to typically one of the largest affector of performance for the FBDL.
