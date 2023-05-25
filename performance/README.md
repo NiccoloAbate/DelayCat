@@ -45,6 +45,7 @@ The graph below shows the CPU Load with different Delay Line Buffer Sizes (secon
 Interestingly, the buffer size has no visible impact when the default segment size of 0.25s / 11025 samples is used. However, with the smaller segment size of 1024 samples, there is visible affect. This is because factors that affect the number of queries to the targeting function and comparisons in the targeting function are multiplicative, meaning the affect of the larger number of comparisons introduced by the increased buffer size is much more noticeable with more frequent queries to the targeting function.
 
 # Other Metrics and Considerations
+Other metrics and notable performance considerations for the FBDL include [Delay Time](#delay-time).
 
 ## Delay Time
 Like a traditional delay line, Delay Time has no effect on performance.
