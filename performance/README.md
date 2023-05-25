@@ -2,7 +2,7 @@
 
 # Primary Performance Affectors
 
-Knowing the Feature-Based Delay Line (FBDL) architecture, intuitively we think there are a 3 main affectors of performance: (1) [FFT / analysis](#fft-/-analysis), (2) Targeting function, and (3) audio processing overhead. This intuition is backed by measurements as well.
+Knowing the Feature-Based Delay Line (FBDL) architecture, intuitively we think there are a 3 main affectors of performance: (1) [FFT / analysis](#fft-/-analysis), (2) [Targeting function](#targeting-function), and (3) audio processing overhead. This intuition is backed by measurements as well.
 
 ## FFT / Analysis
 This is shown to typically one of the largest affector of performance for the FBDL.
@@ -16,7 +16,7 @@ This shows the significant impact of the FFT / analysis on the performance of th
 ## Targeting Function
 The targeting function (segment selection) also can have significant impact on the performance of the FBDL. Roughly speaking there are 2 factors to consider here: (1) number / frequency of queries to the targeting function and (2) number of comparisons in the targeting function (number of segments in the delay line check for selection viability). For each query to the targeting function, all comparisons must be made, meaning these factors are multiplicative.
 
-The main parameters which determine these factors are Number of Segments read concurrently, Segment Size, and Delay Line Buffer Size.
+The main parameters which determine these factors are [Number of Segments](#number-of-segments) read concurrently, [Segment Size](#segment-size), and [Delay Line Buffer Size](#delay-line-buffer-size).
 
 ### Number of Segments
 The Number of Segments read concurrently increases the number of queries to the targeting function, as more segments are being selected. Default settings for other parameters are used.
