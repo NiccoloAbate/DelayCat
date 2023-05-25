@@ -21,9 +21,11 @@ The main parameters which determine these factors are Number of Segments read co
 ### Number of Segments
 The Number of Segments read concurrently increases the number of queries to the targeting function, as more segments are being selected. Default settings for other parameters are used.
 
-The graph below shows the CPU Load with increasing Number of Segments read concurrently.
+The graphs below shows the CPU Load with increasing Number of Segments read concurrently, and the execution time of the audio ProcessBlock call (ms) with different buffer sizes and increasing Number of Segments read concurrently.
 
 ![CPU Load vs  # Segments](https://github.com/delaycattemp/delaycattemp/assets/105883026/82d2583f-28ab-4060-992a-2bbd2dcd68e7)
+
+![PluginDoctorNumSegmentsPlots](https://github.com/delaycattemp/delaycattemp/assets/105883026/53aa1018-0bb3-4e9c-ba27-ca4adc8a399d)
 
 As we can see, this increases CPU load at a linear rate.
 
