@@ -15,7 +15,9 @@ Experiment Jupyter Notebooks are available in the experiments/ folder, or at the
 [De-Essing Experiment](https://nbviewer.org/github/delaycattemp/delaycattemp/blob/main/experiments/De-Essing%20Experiment.ipynb)
 
 # Performance Analysis
-Performance alaysis data and commentary is available in the performance/ folder.
+Performance alaysis data and commentary is available in the performance/ folder, or at the following link:
+
+[Performance Analysis](https://github.com/delaycattemp/delaycattemp/tree/main/performance)
 
 # Builds
 Builds of the plugin are available in the builds/ directory (with the exception of the packaged installers) or available at the following direct download links. Note that the code is not signed.
