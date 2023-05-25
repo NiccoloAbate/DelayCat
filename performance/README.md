@@ -1,4 +1,7 @@
 # Performance Evaluation (ongoing)
+[Primary Performance Affectors](#primary-performance-affectors)
+
+[Other Metrics and Considerations](#other-metrics-and-considerations)
 
 # Primary Performance Affectors
 
