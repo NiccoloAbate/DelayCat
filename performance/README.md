@@ -42,7 +42,16 @@ The graph below shows the CPU Load with different Delay Line Buffer Sizes (secon
 
 ![CPU Load (Segment Size = 11025) and CPU Load (Segment Size = 1024)](https://github.com/delaycattemp/delaycattemp/assets/105883026/1635e056-4c81-4d88-b156-a650800dcd8a)
 
-Interestingly, the buffer size has no visible impact when the default segment size of 0.25s / 11025 samples is used. However, with the smaller segment size of 1024 samples, there is visible affect. This is because factors that affect the number of queries to the targeting function and comparisons in the targeting function are multiplicative, meaning the affect of the larger number of comparisons introduced by the increased buffer size is much more noticeable with more frequent queries to the targeting function.
+Interestingly, the Delay Line Buffer Bize has no visible impact when the default Segment Size of 0.25s / 11025 samples is used. However, with the smaller Segment Size of 1024 samples, there is visible affect. This is because factors that affect the number of queries to the targeting function and comparisons in the targeting function are multiplicative, meaning the affect of the larger number of comparisons introduced by the increased Delay Line Buffer Size is much more noticeable with more frequent queries to the targeting function.
+
+### Segment Playback Pitch
+The Segment Playback Pitch affects the number of queries to the targeting function because, if segments are being read faster or slower, the rate that new segments must be selected changes.
+
+The graph below shows the CPU Load with different Segment Playback Pitches (semitones). A plot with default Segment Size of 0.25 seconds (11025) and a plot with minimum Segment Size (1024 with the default FFT settings of 2048, 50% overlap) are displayed. Default settings for other parameters are used.
+
+![CPU Load vs  Segment Playback Pitch](https://github.com/delaycattemp/delaycattemp/assets/105883026/0aa56e67-f1a2-4fc3-86f2-26d048c901e6)
+
+Once again, like the Delay Line Buffer Size, the Segment Playback Pitch has no visible impact when the default segment size of 0.25s / 11025 samples is used, but can be seen with smaller Segment Size of 1024 samples. This same logic applies in this case.
 
 # Other Metrics and Considerations
 Other metrics and notable performance considerations for the FBDL include [Delay Time](#delay-time).
