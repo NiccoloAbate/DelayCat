@@ -78,7 +78,7 @@ The graph below shows the CPU load under the worst case scenario (Segment Size =
 
 ![CPU Core Load Worst Case](https://github.com/NiccoloAbate/DelayCat/assets/27022723/bc69141b-cef8-4d25-8ec8-184987c2169a)
 
-The CPU load in this worst case is quite extreme (note that a CPU core load value of 1.0 is the maximum value before the process block call doesn't finish in time, causing lagging and artifacting). This worst case scenario could be avoided by limitting the multiplicative use of these parameters or by speeding up / limitting the querries in the targeting fnction.
+The CPU load in this worst case is quite extreme (note that a CPU core load value of 1.0 is the maximum value before the process block call doesn't finish in time, causing lagging and artifacting). This worst case scenario could be avoided by limitting the multiplicative use of these parameters or by speeding up / limitting the querries in the targeting function. Additionally, this worst case scenario is by no means a common case scenario.
 
 ## Audio Processing Overhead
 Some of the plugin performance, doesn't break down as easily, and simply falls into the gategory of general audio processing overhead, which includes all the audio processing operations which are necessitated for the plugins functioning.
