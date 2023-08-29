@@ -20,7 +20,7 @@ Performance alaysis data and commentary is available in the performance/ folder,
 [Performance Analysis](https://github.com/NiccoloAbate/DelayCat/tree/main/performance)
 
 # Builds
-Builds of the plugin are available in the builds/ directory (with the exception of the packaged installers) or available at the following direct download links. Note that the code is not signed.
+Builds of the plugin are available in the builds/ directory and/or available at the following direct download links. Note that the code is not signed.
 
 Windows:
 [VST2/.dll](https://drive.google.com/uc?export=download&id=1YTLBRWWhTi1gDFs13-AsPPnAirbg-tBU),
@@ -29,3 +29,8 @@ Windows:
 [Installer/.zip](https://drive.google.com/uc?export=download&id=18FfIf-lSRuJPB5gFgHz7GH8K2BJmYU7T)
 
 MacOS: 
+[VST2/.vst](https://drive.google.com/uc?export=download&id=1YTLBRWWhTi1gDFs13-AsPPnAirbg-tBU),
+[VST3/.vst3](https://drive.google.com/uc?export=download&id=1S9zAbUr6qFOz16qmCa68-pfOn5zDYh4S),
+[AU/.component](https://drive.google.com/uc?export=download&id=1EMgC6yDS8AXOUYQ9XCVJIBF3-gdZgdiU),
+[Installer/.exe](https://drive.google.com/uc?export=download&id=1BnhDhW6luC1BSJby2V8zBQUv4OOzNbCN),
+[Installer/.zip](https://drive.google.com/uc?export=download&id=18FfIf-lSRuJPB5gFgHz7GH8K2BJmYU7T)
