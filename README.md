@@ -4,6 +4,16 @@ DelayCat is a Feature Based Delay Line implementation using music information re
 
 ![Plugin GUI](https://user-images.githubusercontent.com/105883026/169382590-f6219405-e84e-47ad-bcc4-d5c5e2df6a52.png)
 
+[Video](#video)
+
+[Experiments](#experiments)
+
+[Performance Analysis](#performance-analysis)
+
+[Builds](#builds)
+
+[Resources](#resources)
+
 # Video
 Here is a short demo video showing some of the use cases / functionality of Delay Cat, hosted at: https://youtu.be/nBOfKavElt8
 
@@ -34,3 +44,8 @@ MacOS:
 [AU/.component](https://drive.google.com/uc?export=download&id=1EMgC6yDS8AXOUYQ9XCVJIBF3-gdZgdiU),
 [Installer/.exe](https://drive.google.com/uc?export=download&id=1BnhDhW6luC1BSJby2V8zBQUv4OOzNbCN),
 [Installer/.zip](https://drive.google.com/uc?export=download&id=18FfIf-lSRuJPB5gFgHz7GH8K2BJmYU7T)
+
+# Resources
+Plugin User Manual is available in the resources directory or at the following direct download link.
+
+[User Manual](https://drive.google.com/uc?export=download&id=1t87b1f9uYP6edTqISSYDWJoa8SztBwTT)
