@@ -1,6 +1,6 @@
 # DelayCat
 
-DelayCat is a Feature Based Delay Line implementation using music information retrieval and concatenative synthesis for novel audio effects.
+DelayCat is a Feature-Based Delay Line implementation using music information retrieval (MIR) and concatenative synthesis for novel audio effects. Based on the associated DAFx 2023 research paper: [Feature-Based Delay Line Using Real Time Concatenative Synthesis](https://dafx23.create.aau.dk/index.php/proceedings/).
 
 ![Plugin GUI](https://user-images.githubusercontent.com/105883026/169382590-f6219405-e84e-47ad-bcc4-d5c5e2df6a52.png)
 
@@ -46,6 +46,8 @@ MacOS:
 [Installer/.zip](https://drive.google.com/uc?export=download&id=18FfIf-lSRuJPB5gFgHz7GH8K2BJmYU7T)
 
 # Resources
-Plugin User Manual is available in the resources directory or at the following direct download link.
+Plugin User Manual and a copy of the published research paper are available in the resources directory or at the following links.
 
 [User Manual](https://drive.google.com/uc?export=download&id=1t87b1f9uYP6edTqISSYDWJoa8SztBwTT)
+
+[DAFx 2023 Research Paper](https://dafx23.create.aau.dk/index.php/proceedings/)
