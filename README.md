@@ -50,4 +50,4 @@ Plugin User Manual and a copy of the published research paper are available in t
 
 [User Manual](https://drive.google.com/uc?export=download&id=1t87b1f9uYP6edTqISSYDWJoa8SztBwTT)
 
-[DAFx 2023 Research Paper](https://dafx23.create.aau.dk/index.php/proceedings/)
+[DAFx 2023 Research Paper](https://www.dafx.de/paper-archive/search.php?q=Feature%20Based%20Delay%20Line%20Using%20Real-Time%20Concatenative%20Synthesis&years=2023)
