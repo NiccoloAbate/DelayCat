@@ -11,7 +11,7 @@
 
 The primary metric used for evaluation is the CPU core load of the plugin under different configurations. The CPU core load is a value from 0 to 1 which is the amount of time used by the process block call / the amount of time allowed by the DAW before the audio must be finished processing. This metric is used to measure the change in performance caused by each important parameter.
 
-A sample rate of 44100 and a audio block size of 256 was used.
+A sample rate of 44100 and a audio block size of 256 was used, and the tests were run on an Intel i7-6799HQ processor.
 
 # Primary Performance Affectors
 
@@ -22,7 +22,7 @@ This is shown to typically one of the largest affector of performance for the FB
 
 This is demonstrated below, where we see the CPU Load with different FFT overlap settings, where the different overlap values represent the number of FFTs overlapped, where the overlap percentage is (FFT Overlap - 1)/(FFT Overlap). The default FFT size of 2048 was used.
 
-![CPU Core Load vs  FFT Overlap](https://github.com/NiccoloAbate/DelayCat/assets/27022723/7019b5fd-af28-48a0-8340-c05e508337c7)
+![CPU Core Load vs  FFT Overlap](https://github.com/NiccoloAbate/DelayCat/assets/27022723/836de897-381a-4032-8518-e46eac1a424e)
 
 This shows the significant impact of the FFT / analysis on the performance of the FBDL.
 
@@ -38,7 +38,7 @@ The Number of Segments read concurrently increases the number of queries to the 
 
 The graph below shows the CPU Load with increasing Number of Segments read concurrently increasing Number of Segments read concurrently. Default settings for other parameters were used.
 
-![CPU Core Load vs  # Segments](https://github.com/NiccoloAbate/DelayCat/assets/27022723/624dbcb5-81f1-4af6-b4fe-c6683077f446)
+![CPU Core Load vs  # Segments](https://github.com/NiccoloAbate/DelayCat/assets/27022723/d9771682-f792-4c7e-9457-0cb6bea18b6d)
 
 As we can see, this increases CPU load at a linear rate.
 
@@ -49,7 +49,7 @@ The Segment Size increases the number of queries to the targeting function becau
 
 The graph below shows the CPU load with different segment sizes. Default settings for other parameters were used.
 
-![CPU Core Load vs  Segment Size](https://github.com/NiccoloAbate/DelayCat/assets/27022723/7d4bf911-fc24-40f6-bfa6-04773c3bd8af)
+![CPU Core Load vs  Segment Size](https://github.com/NiccoloAbate/DelayCat/assets/27022723/10b21c0d-a128-4082-840e-ee39b7a270a1)
 
 We can see some performance effect as the segment size shrinks, though it isn't always super visible at this level of granularity.
 
@@ -58,7 +58,7 @@ The Delay Line Buffer Size increases the number of comparisons in the targeting 
 
 The graph below shows the CPU Load with different Delay Line Buffer Sizes (seconds). A plot with default segment size of 0.25 seconds (11025 samples) and a plot with minimum segment size (1024 with the default FFT settings of 2048, 50% overlap) are displayed. Default settings for other parameters were used.
 
-![CPU Load vs  Buffer Size](https://github.com/NiccoloAbate/DelayCat/assets/27022723/e4a44b70-d32d-4b89-a7c0-85a65b79b821)
+![CPU Load vs  Buffer Size](https://github.com/NiccoloAbate/DelayCat/assets/27022723/0e06c098-e829-43df-8eee-24e62c0e87d2)
 
 Interestingly, the Delay Line Buffer Bize has no visible impact at this level of granularity when the default Segment Size of 0.25s / 11025 samples is used. However, with the smaller Segment Size of 1024 samples, there is visible affect. This is because factors that affect the number of queries to the targeting function and comparisons in the targeting function are multiplicative, meaning the affect of the larger number of comparisons introduced by the increased Delay Line Buffer Size is much more noticeable with more frequent queries to the targeting function.
 
@@ -67,7 +67,7 @@ The Segment Playback Pitch affects the number of queries to the targeting functi
 
 The graph below shows the CPU Load with different Segment Playback Pitches (semitones). A plot with default Segment Size of 0.25 seconds (11025 samples) and a plot with minimum Segment Size (1024 with the default FFT settings of 2048, 50% overlap) are displayed. Default settings for other parameters were used.
 
-![CPU Load vs  Segment Playback Pitch](https://github.com/NiccoloAbate/DelayCat/assets/27022723/47b5c3ec-d8ee-4b9d-aa33-d7d8e25fe459)
+![CPU Load vs  Segment Playback Pitch](https://github.com/NiccoloAbate/DelayCat/assets/27022723/c4d0f361-d3e3-453f-b2cc-dc75c7ad2e1b)
 
 Once again, like the Delay Line Buffer Size, the Segment Playback Pitch has no visible impact at this level of granularity when the default segment size of 0.25s / 11025 samples is used, but can be seen with smaller Segment Size of 1024 samples. This same logic applies in this case.
 
@@ -76,7 +76,7 @@ As we can see, these targeting functions affectors are multiplicative. With that
 
 The graph below shows the CPU load under the worst case scenario (Segment Size = 1024, Buffer Size = 64, Pitch = 24) and increasing number of segments.
 
-![CPU Core Load Worst Case](https://github.com/NiccoloAbate/DelayCat/assets/27022723/bc69141b-cef8-4d25-8ec8-184987c2169a)
+![CPU Core Load Worst Case](https://github.com/NiccoloAbate/DelayCat/assets/27022723/fe08ceb1-639d-4f89-a18a-1f49f3617a42)
 
 The CPU load in this worst case is quite extreme (note that a CPU core load value of 1.0 is the maximum value before the process block call doesn't finish in time, causing lagging and artifacting). This worst case scenario could be avoided by limitting the multiplicative use of these parameters or by speeding up / limitting the querries in the targeting function. Additionally, this worst case scenario is by no means a common case scenario.
 
@@ -93,7 +93,7 @@ Like a traditional delay line, Delay Time has no effect on performance.
 
 This is illustrated in the graph below.
 
-![CPU Load vs  DelayTime](https://github.com/NiccoloAbate/DelayCat/assets/27022723/c4f6233f-df70-4376-af43-1021cfd60a02)
+![CPU Load vs  DelayTime](https://github.com/NiccoloAbate/DelayCat/assets/27022723/11e1b185-eb2a-4653-a793-d1c89a6d7aa4)
 
 # Room for Improvement
 Surely there are lots of clever ways under to hood to improve the performance of our implementation. That being said, there are a couple larger scale areas where improvement could be made, namely:
