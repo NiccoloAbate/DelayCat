@@ -46,7 +46,7 @@ MacOS:
 [VST2/.vst](https://drive.google.com/uc?export=download&id=17BK5VdnYgd1xWprADjqNsA6eVESlawXM),
 [VST3/.vst3](https://drive.google.com/uc?export=download&id=1-sN5bcxDiknhVh_nyW2v_juEOtbGip-M),
 [AU/.component](https://drive.google.com/uc?export=download&id=15uvwWO7dKLSH9DATIw8HZIHbdmoOlc_H),
-[Installer/.exe](https://drive.google.com/uc?export=download&id=1_lTqOzCLlQUo-88mUT3G2dudQJfvwqwu)
+[Installer/.pkg](https://drive.google.com/uc?export=download&id=1_lTqOzCLlQUo-88mUT3G2dudQJfvwqwu)
 
 # Resources
 Plugin User Manual and a copy of the published research paper are available in the resources directory or at the following links.
