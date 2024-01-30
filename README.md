@@ -5,7 +5,7 @@ DelayCat is a Feature-Based Delay Line implementation using music information re
 ![Plugin GUI](https://user-images.githubusercontent.com/105883026/169382590-f6219405-e84e-47ad-bcc4-d5c5e2df6a52.png)
 
 The plugin is currently undergoing a large graphical overhaul (as well as adding some features) which should be out here in a few months time. He is a progress screenshot.
-![Plugin Overhaul Progress](https://github.com/NiccoloAbate/DelayCat/assets/27022723/62aca193-3788-48b8-b5ab-58d1146e195b)
+![Plugin Overhaul Progress](https://github.com/NiccoloAbate/DelayCat/assets/27022723/2211a5bf-4789-47ed-9076-74b81f293fc8)
 
 
 [Video](#video)
