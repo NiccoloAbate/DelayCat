@@ -6,7 +6,7 @@ Recently underwent GUI overhaul (as well as adding some features). Still in prog
 ![GUI Overhaul Progress](https://github.com/NiccoloAbate/DelayCat/assets/27022723/19f9b252-c8bf-46c0-ae46-614cfd79f410)
 
 
-[Video](#video)
+[Video (Outdated)](#video)
 
 [Experiments](#experiments)
 
