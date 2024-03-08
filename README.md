@@ -16,8 +16,8 @@ Recently underwent GUI overhaul (as well as adding some features). Still in prog
 
 [Resources](#resources)
 
-# Video
-Here is a short demo video showing some of the use cases / functionality of Delay Cat, hosted at: https://youtu.be/nBOfKavElt8
+# Video (Outdated)
+Here is a short (outdated) demo video showing some of the use cases / functionality of Delay Cat, hosted at: https://youtu.be/nBOfKavElt8
 
 # Experiments
 Experiment Jupyter Notebooks are available in the experiments/ folder, or at the following nbviewer links:
