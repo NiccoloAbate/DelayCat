@@ -37,6 +37,6 @@ Temporarily made unavailable. Feel free to contact me if you want a build to try
 # Resources
 Plugin User Manual and a copy of the published research paper are available in the resources directory or at the following links.
 
-[User Manual (Outdated)](https://drive.google.com/uc?export=download&id=1NP3yB9QGDs_ImKa_Gi-f6LH09uY3hrJ0HtSzFpLhukk)
+[User Manual](https://drive.google.com/uc?export=download&id=1dmZX_Htqt2VK9lp_zVEe2H0vORcoh2gL)
 
 [DAFx 2023 Research Paper](https://www.dafx.de/paper-archive/search.php?q=Feature%20Based%20Delay%20Line%20Using%20Real-Time%20Concatenative%20Synthesis&years=2023)
